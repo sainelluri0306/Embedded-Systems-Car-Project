@@ -1,25 +1,19 @@
-# ECE 306 Embedded Systems Project — Autonomous Car
+# Autonomous Car - ECE 306 Embedded Systems Project
 
-**MCU | Interface | Language | System**
-
----
+![MCU](https://img.shields.io/badge/MCU-MSP430FR2355-red)
+![Interface](https://img.shields.io/badge/ESP32-BLE%2FWiFi-green)
+![Language](https://img.shields.io/badge/Language-C-blue)
+![System](https://img.shields.io/badge/Type-Autonomous%20Embedded%20System-lightgrey)
 
 ## Table of Contents
-Overview  
-Features  
-Hardware  
-Software  
-Images  
-Videos  
-License  
-Contact  
-
----
+- [Overview](#overview)
+- [Features](#features)
+- [Hardware](#hardware)
+- [Software](#software)
+- [Notes](#notes)
 
 ## Overview
 This MSP430 Embedded Car is a class project built around the MSP430FR2355 microcontroller along with supporting peripherals to achieve both remote-controlled operation and autonomous behavior. The system demonstrates embedded C programming applied to a physical hardware platform, including motor control and black-line detection/following.
-
----
 
 ## Features
 - PWM-based control of vehicle motion  
@@ -30,8 +24,6 @@ This MSP430 Embedded Car is a class project built around the MSP430FR2355 microc
 - Wireless control support using an ESP32 IoT module  
 - Modular firmware structure for easier development and updates  
 
----
-
 ## Hardware
 - MSP430FR2355 microcontroller  
 - LCD display module  
@@ -40,12 +32,8 @@ This MSP430 Embedded Car is a class project built around the MSP430FR2355 microc
 - IR emitter and detector sensors  
 - ESP32 IoT module  
 
----
-
 ## Software
-Developed using **Code Composer Studio v12.8.1**
-
----
+Developed using Code Composer Studio v12.8.1
 
 ## Notes
 - Autonomous behavior is implemented at the firmware level using sensor feedback and state-based control logic  

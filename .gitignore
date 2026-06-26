@@ -1,0 +1,24 @@
+# CCS / Eclipse / IDE files
+.idea/
+.metadata/
+.launches/
+RemoteSystemsTempFiles/
+targetConfigs/
+.settings/
+
+# Build output
+Debug/
+Compiled/
+*.out
+*.obj
+*.map
+*.d
+
+# CCS project metadata
+.ccsproject
+.cproject
+.project
+
+# System files
+.DS_Store
+Thumbs.db

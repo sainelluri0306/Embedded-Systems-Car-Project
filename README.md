@@ -37,5 +37,44 @@ The system focuses on embedded C programming, peripheral configuration, and inte
 - MSP430 peripherals: GPIO, PWM, ADC, timers  
 - ESP32 communication stack: UART + BLE/WiFi
 
-## Code Organization
-The project is structured into hardware abstraction, drivers, and application-level control logic.
+## System Architecture
+
+The project follows a layered embedded system design consisting of application logic, hardware drivers, and platform configuration.
+
+### Source Layer (`src/`)
+This layer contains all core firmware implementation including control logic, peripheral drivers, and system behavior.
+
+- `main.c` — Entry point of the program and main execution loop  
+- `adc.c` — ADC configuration and sensor data acquisition  
+- `clocks.c` — System clock initialization and configuration  
+- `Display.c` — Display/LCD interface handling  
+- `init.c` — System initialization routines  
+- `init_cmds.c` — Initialization command sequences  
+- `led.c` — LED control functions  
+- `movement_statemachine.c` — Movement decision state machine  
+- `ports.c` — GPIO port configuration and control  
+- `StateMachine.c` — High-level system state management  
+- `switches.c` — Input handling for switches/buttons  
+- `system.c` — System-level configuration and utilities  
+- `timers.c` — Timer setup and interrupt handling  
+- `uart.c` — UART communication interface  
+- `wheels.c` — Motor and wheel control logic  
+
+---
+
+### Interface Layer (`includes/`)
+This layer defines all shared interfaces, macros, and hardware abstraction headers used across the project.
+
+- `adc.h` — ADC function declarations and definitions  
+- `functions.h` — General-purpose function prototypes  
+- `LCD.h` — Display interface definitions  
+- `macros.h` — System-wide constants and macros  
+- `ports.h` — GPIO definitions and mappings  
+- `wheels.h` — Motor control interface definitions  
+
+---
+
+### Configuration Layer (`linker/`)
+This layer defines the memory layout and hardware-specific configuration for the MSP430 microcontroller.
+
+- `lnk_msp430fr2355.cmd` — Linker script defining memory sections and allocation

@@ -3,7 +3,7 @@
 ![MCU](https://img.shields.io/badge/MCU-MSP430FR2355-red)
 ![Interface](https://img.shields.io/badge/ESP32-BLE%2FWiFi-green)
 ![Language](https://img.shields.io/badge/Language-C-blue)
-![System](https://img.shields.io/badge/Type-Autonomous%20Embedded%20System-grey)
+![System](https://img.shields.io/badge/Type-Autonomous%20Embedded%20System-yellow)
 
 ## Table of Contents
 - [Overview](#overview)
